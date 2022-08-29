@@ -1,0 +1,257 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  color: white;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+header ul li {
+  margin-right: 3rem;
+  list-style: none;
+  margin: 0px 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+header a {
+  text-decoration: none;
+  color: rgb(255, 200, 107);
+}
+header ul li:hover {
+  color: black;
+  background: rgb(255, 200, 107);
+}
+header ul li:hover a {
+  color: black;
+}
+#intro img {
+  height: 100vh;
+  width: 100%;
+}
+.About,
+#skills {
+  width: 80rem;
+  max-width: 80rem;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.About,
+#skills,
+#portfolio h2 {
+  text-align: center;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 10%;
+}
+.skill {
+  padding: 1rem 3rem;
+  background: rgb(61, 62, 66);
+  width: 10rem;
+  text-align: center;
+  border-radius: 6px;
+}
+.skill:hover {
+  background: rgb(240, 191, 108);
+}
+i {
+  font-size: 7rem;
+}
+#portfolio {
+  max-width: 90rem;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+#portfolio ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.hover-box,
+.hover-box * {
+  box-sizing: border-box;
+}
+.hover-box {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 25rem;
+  height: 30rem;
+}
+.hover-box img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hover-box img {
+}
+/* .hover-box img {
+  width: 25rem;
+  height: 30rem;
+  
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+} */
+/* #portfolio ul li p {
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+.hover-box .imageText {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 6rem 1rem;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.hover-box:hover .imageText,
+.hover-box.active .imageText {
+  opacity: 1;
+}
+.hover-box .imageText {
+  text-align: center;
+  font-size: 1rem;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  justify-content: center;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* #portfolio ul li .imageText {
+  transition: 0.5s ease;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+#portfolio ul li:hover img {
+  opacity: 0.3;
+}
+#portfolio ul li:hover .imageText {
+  opacity: 1;
+} */
+#portfolio button {
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  background: rgb(255, 200, 107);
+  border: 1px solid rgb(255, 200, 107);
+  font: inherit;
+}
+footer {
+  padding: 5rem 7.5rem;
+  display: flex;
+  flex-direction: row;
+  /* max-width: 90rem; */
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(61, 62, 66);
+  color: white;
+}
+.info {
+  width: 45%;
+  padding: 1rem 0.5rem;
+}
+.svgs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 1rem;
+  background-color: red;
+  border-radius: 100%;
+  color: white;
+}
+.phone,
+.mail,
+.location {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+footer .svgs p,
+h4 {
+  margin: 0;
+}
+.form {
+  width: 45%;
+  padding: 1rem 0.5rem;
+}
+.form-control {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.form-control input {
+  width: 45%;
+  height: 2rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+  font: inherit;
+}
+.form-control textarea {
+  width: 100%;
+  border-radius: 5px;
+  font: inherit;
+  padding: 0.25rem;
+}
