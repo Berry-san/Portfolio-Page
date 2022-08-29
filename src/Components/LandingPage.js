@@ -3,7 +3,7 @@ import "./LandingPage.css";
 
 function LandingPage() {
   return (
-    <div>
+    <>
       <header>
         <div>
           <a href="www.you.com" id="bg-landing">
@@ -318,7 +318,7 @@ function LandingPage() {
           </form>
         </section>
       </footer>
-    </div>
+    </>
   );
 }
 
